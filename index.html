@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LP Forum Sections</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <nav class="sidebar">
+      <ul>
+        <li class="menu-item active" data-section="talks">TALKS & PROGRAM</li>
+        <li class="menu-item" data-section="networking">NETWORKING</li>
+        <li class="menu-item" data-section="lp-dinner">LP DINNER</li>
+        <li class="menu-item" data-section="matchmaking">MATCHMAKING</li>
+        <li class="menu-item" data-section="side-events">SIDE EVENTS</li>
+        <!-- Speakers menu item hidden, handled by Talks & Program -->
+      </ul>
+    </nav>
+    <main class="content">
+      <section id="section-talks" class="section active">
+        <!-- Talks & Program now shows the Speakers section -->
+
+        <!-- Inject Brella Widget Here -->
+        <div id="brella-widget" >
+          <script type="text/props">
+            {
+              "joinCode": "SC05",
+              "widgetType": "speakers",
+              "labels": {
+                    "featuredSpeakers": "Featured Speakers",
+                    "allSpeakers": "All speakers",
+                    "learnMore": "Learn more"
+              },
+              "paginationPageSize": 12,
+              "socialMediaLinks": {}
+            }
+          </script>
+        </div>
+        <script async src="https://widget.brella.io"></script>
+        <!-- Inject Brella Widget Here End -->
+      </section>
+      <section id="section-networking" class="section">
+        <div class="headline-large">It’s all about building<br>connections.</div>
+        <p class="main-paragraph">Now more than ever, having a strong community around you is key to successful investing.</p>
+        <p class="main-paragraph"><b>At TechBBQ, we prioritise LPs by creating opportunities to expand their networks, build new connections, and strengthen existing relationships.</b></p>
+        <p class="main-paragraph">Throughout the LP Forum, we have a dedicated space designed specifically for high-value networking.</p>
+        <a href="#" target="_blank" class="neon-button-main-urban" rel="noopener noreferrer">I'm interested</a>
+      </section>
+      <section id="section-lp-dinner" class="section">
+        <div class="headline-large">TechBBQ LP Dinner – An<br>Exclusive Gathering for 100 Participants</div>
+        <p class="main-paragraph">We're creating an intimate setting where high-value networking goes beyond the professional agenda and meaningful relationships are built.</p>
+        <p class="main-paragraph">In collaboration with the iconic D’Angleterre, we’re offering a premium dining experience in the heart of Copenhagen.</p>
+        <p class="main-paragraph">This event is invite-only.</p>
+        <a href="#" target="_blank" class="neon-button-main-urban" rel="noopener noreferrer">I'm interested</a>
+      </section>
+      <section id="section-matchmaking" class="section">
+        <div class="headline-large">Curated 1:1 GP-LP<br>Match Making</div>
+        <p class="main-paragraph">Designed to spark meaningful long-term partnerships, TechBBQ and Mountside Ventures are joining forces to facilitate pre-qualified, 1:1 meetings between top-tier GPs and leading LPs. Each match is thoughtfully curated to align interests, stage, and strategy—maximising value for both sides.</p>
+        <a href="#" target="_blank" class="neon-button-main-urban" rel="noopener noreferrer">I'm interested</a>
+      </section>
+      <section id="section-side-events" class="section">
+        <div class="side-events-list">
+          <div class="side-event-card">
+            <img class="side-event-img" src="https://dummyimage.com/60x60/abf/fff&text=HEARTCORE" alt="Heartcore" />
+            <span class="side-event-title">LP BREAKFASTS</span>
+            <span class="neon-button-outline">PRIVATE</span>
+          </div>
+          <div class="side-event-card">
+            <img class="side-event-img" src="https://dummyimage.com/60x60/222/fff&text=ND" alt="Norwegian-Danish" />
+            <span class="side-event-title">NORWEGIAN-DANISH LP GATHERING</span>
+            <a href="#" target="_blank" class="neon-button-main-urban" rel="noopener noreferrer">I'M INTERESTED</a>
+          </div>
+          <div class="side-event-card">
+            <img class="side-event-img" src="https://dummyimage.com/60x60/222/fff&text=UBS" alt="UBS" />
+            <span class="side-event-title">UBS LP TALKS - DAY 1</span>
+            <a href="#" target="_blank" class="neon-button-main-urban" rel="noopener noreferrer">I'M INTERESTED</a>
+          </div>
+          <div class="side-event-card">
+            <img class="side-event-img" src="https://dummyimage.com/60x60/333/fff&text=DFM" alt="Diverse Founder Meetup" />
+            <span class="side-event-title">PSV CRAFT BEER</span>
+            <a href="#" target="_blank" class="neon-button-main-urban" rel="noopener noreferrer">I'M INTERESTED</a>
+          </div>
+          <div class="side-event-card">
+            <img class="side-event-img" src="https://dummyimage.com/60x60/abf/fff&text=BR" alt="Blackrock" />
+            <span class="side-event-title">BLACKROCK LP BREAKFAST</span>
+            <a href="#" target="_blank" class="neon-button-main-urban" rel="noopener noreferrer">I'M INTERESTED</a>
+          </div>
+        </div>
+      </section>
+      <!-- Speakers section moved below -->
+      <!-- Speakers section is now handled by Talks & Program -->
+    </main>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
