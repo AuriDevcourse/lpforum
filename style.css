@@ -831,6 +831,33 @@ img[data-testid="speaker-card-image"] {
 }
 /* --- End Main Paragraph Style --- */
 
+ul.main-paragraph {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.2rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+ul.main-paragraph li {
+  background: #181818;
+  color: #fff;
+  border-radius: 14px;
+  padding: 16px 22px;
+  margin: 0;
+  font-size: 1rem;
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border: 1px solid #232323;
+  letter-spacing: 0.2px;
+  transition: background 0.2s;
+}
+ul.main-paragraph li:hover {
+  background: #232323;
+}
+
+
 /* --- Brella Widget Customizations --- */
 .brella-speaker-search {
     display: none !important;
